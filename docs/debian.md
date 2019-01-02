@@ -1,3 +1,8 @@
+---
+title: Debian Repository
+layout: page
+---
+
 # Debian repository
 
 To use this repository with your Debian machine, create a file `solaar.list` in
