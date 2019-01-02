@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+title: Solaar
+description: Linux Device manager for the Logitech Unifying Receiver.
+show_downloads: true
