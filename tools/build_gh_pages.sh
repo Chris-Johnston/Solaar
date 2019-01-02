@@ -56,11 +56,11 @@ fix_times() {
 
 /bin/cp --archive --update "$SELF/jekyll"/* "$BUILD/"
 # convert the svg logo to png for the web site favicon
-/usr/bin/convert.im6 "$SELF/share/solaar/icons/solaar.svg" -transparent white \
-	-resize 32x32 "$BUILD/images/favicon.png"
+#/usr/bin/convert "$SELF/share/solaar/icons/solaar.svg" -transparent white \
+#	-resize 32x32 "$BUILD/images/favicon.png"
 
 # optimize the converted pngs
-command -V optipng && optipng -preserve -quiet -o 7 "$BUILD/images"/*.png
+#command -V optipng && optipng -preserve -quiet -o 7 "$BUILD/images"/*.png
 #command -V pngcrush && pngcrush -d "$BUILD/images" -oldtimestamp -q "$BUILD/images"/*.png
 
 add_md docs/devices.md
